@@ -177,65 +177,66 @@
           </table>
         </section>
 
+<!-- NEW SECTION 1: Baseline Comparison -->
+<section id="baseline-comparison" class="my-5">
+  <h2>Baseline Comparison</h2>
+  <table class="table table-responsive">
+    <thead>
+      <tr>
+        <th>Ground Truth</th>
+        <th>Input</th>
+        <th>Mel2Mel</th>
+        <th>Text2FX-EQ</th>
+        <th>SonicMaster</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Sample 1 -->
+      <tr>
+        <td><audio controls style="width:150px;"><source src="./Songs/Original/1034755.flac" type="audio/wav"/></audio></td>
+        <td><audio controls style="width:150px;"><source src="./Songs/Input/1034755_deg2.wav" type="audio/wav"/></audio></td>
+        <td><audio controls style="width:150px;"><source src="./Songs/baselines/Mel2Mel/1034755_deg2.wav" type="audio/wav"/></audio></td>
+        <td><audio controls style="width:150px;"><source src="./Songs/baselines/Text2FX-EQ/1034755_deg2.wav" type="audio/wav"/></audio></td>
+        <td><audio controls style="width:150px;"><source src="./Songs/infer/1034755_deg2.wav" type="audio/wav"/></audio></td>
+      </tr>
+      <!-- Sample 2 -->
+      <tr>
+        <td><audio controls style="width:150px;"><source src="./Songs/Original/110188.wav" type="audio/wav"/></audio></td>
+        <td><audio controls style="width:150px;"><source src="./Songs/Input/110188_deg3.wav" type="audio/wav"/></audio></td>
+        <td><audio controls style="width:150px;"><source src="./Songs/baselines/Mel2Mel/110188_deg3.wav" type="audio/wav"/></audio></td>
+        <td><audio controls style="width:150px;"><source src="./Songs/baselines/Text2FX-EQ/110188_deg3.wav" type="audio/wav"/></audio></td>
+        <td><audio controls style="width:150px;"><source src="./Songs/infer/110188_deg3.wav" type="audio/wav"/></audio></td>
+      </tr>
+      <!-- Sample 3 -->
+      <tr>
+        <td><audio controls style="width:150px;"><source src="./Songs/Original/1245169.wav" type="audio/wav"/></audio></td>
+        <td><audio controls style="width:150px;"><source src="./Songs/Input/1245169_deg2.wav" type="audio/wav"/></audio></td>
+        <td><audio controls style="width:150px;"><source src="./Songs/baselines/Mel2Mel/1245169_deg2.wav" type="audio/wav"/></audio></td>
+        <td><audio controls style="width:150px;"><source src="./Songs/baselines/Text2FX-EQ/1245169_deg2.wav" type="audio/wav"/></audio></td>
+        <td><audio controls style="width:150px;"><source src="./Songs/infer/1245169_deg2.wav" type="audio/wav"/></audio></td>
+      </tr>
+      <!-- Sample 4 -->
+      <tr>
+        <td><audio controls style="width:150px;"><source src="./Songs/Original/1249708.wav" type="audio/wav"/></audio></td>
+        <td><audio controls style="width:150px;"><source src="./Songs/Input/1249708_deg1.wav" type="audio/wav"/></audio></td>
+        <td><audio controls style="width:150px;"><source src="./Songs/baselines/Mel2Mel/1249708_deg1.wav" type="audio/wav"/></audio></td>
+        <td><audio controls style="width:150px;"><source src="./Songs/baselines/Text2FX-EQ/1249708_deg1.wav" type="audio/wav"/></audio></td>
+        <td><audio controls style="width:150px;"><source src="./Songs/infer/1249708_deg1.wav" type="audio/wav"/></audio></td>
+      </tr>
+      <!-- Sample 5 -->
+      <tr>
+        <td><audio controls style="width:150px;"><source src="./Songs/Original/1341754.wav" type="audio/wav"/></audio></td>
+        <td><audio controls style="width:150px;"><source src="./Songs/Input/1341754_deg3.wav" type="audio/wav"/></audio></td>
+        <td><audio controls style="width:150px;"><source src="./Songs/baselines/Mel2Mel/1341754_deg3.wav" type="audio/wav"/></audio></td>
+        <td><audio controls style="width:150px;"><source src="./Songs/baselines/Text2FX-EQ/1341754_deg3.wav" type="audio/wav"/></audio></td>
+        <td><audio controls style="width:150px;"><source src="./Songs/infer/1341754_deg3.wav" type="audio/wav"/></audio></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 
 
-        <!-- NEW SECTION 1: Baseline Comparison -->
-        <section id="baseline-comparison" class="my-5">
-          <h2>Baseline Comparison</h2>
-          <table class="table table-responsive">
-            <thead>
-              <tr>
-                <th>Text Prompt</th>
-                <th>Ground Truth</th>
-                <th>Mel2Mel</th>
-                <th>Text2FX-EQ</th>
-                <th>Sonic Master</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- Sample 1 -->
-              <tr>
-                <td style="font-size: 1rem;">Reduce room echo and brighten vocals slightly.</td>
-                <td><audio controls style="width:150px;"><source src="./Songs/origs/2001001.wav" type="audio/wav"/></audio></td>
-                <td><audio controls style="width:150px;"><source src="./Songs/baselines/mel2mel/2001001.wav" type="audio/wav"/></audio></td>
-                <td><audio controls style="width:150px;"><source src="./Songs/baselines/text2fx_eq/2001001.wav" type="audio/wav"/></audio></td>
-                <td><audio controls style="width:150px;"><source src="./Songs/infer/2001001_infer.wav" type="audio/wav"/></audio></td>
-              </tr>
-              <!-- Sample 2 -->
-              <tr>
-                <td style="font-size: 1rem;">Increase bass warmth without muddying mids.</td>
-                <td><audio controls style="width:150px;"><source src="./Songs/origs/2001002.wav" type="audio/wav"/></audio></td>
-                <td><audio controls style="width:150px;"><source src="./Songs/baselines/mel2mel/2001002.wav" type="audio/wav"/></audio></td>
-                <td><audio controls style="width:150px;"><source src="./Songs/baselines/text2fx_eq/2001002.wav" type="audio/wav"/></audio></td>
-                <td><audio controls style="width:150px;"><source src="./Songs/infer/2001002_infer.wav" type="audio/wav"/></audio></td>
-              </tr>
-              <!-- Sample 3 -->
-              <tr>
-                <td style="font-size: 1rem;">De-clip peaks and restore headroom.</td>
-                <td><audio controls style="width:150px;"><source src="./Songs/origs/2001003.wav" type="audio/wav"/></audio></td>
-                <td><audio controls style="width:150px;"><source src="./Songs/baselines/mel2mel/2001003.wav" type="audio/wav"/></audio></td>
-                <td><audio controls style="width:150px;"><source src="./Songs/baselines/text2fx_eq/2001003.wav" type="audio/wav"/></audio></td>
-                <td><audio controls style="width:150px;"><source src="./Songs/infer/2001003_infer.wav" type="audio/wav"/></audio></td>
-              </tr>
-              <!-- Sample 4 -->
-              <tr>
-                <td style="font-size: 1rem;">Widen stereo image for fuller mix.</td>
-                <td><audio controls style="width:150px;"><source src="./Songs/origs/2001004.wav" type="audio/wav"/></audio></td>
-                <td><audio controls style="width:150px;"><source src="./Songs/baselines/mel2mel/2001004.wav" type="audio/wav"/></audio></td>
-                <td><audio controls style="width:150px;"><source src="./Songs/baselines/text2fx_eq/2001004.wav" type="audio/wav"/></audio></td>
-                <td><audio controls style="width:150px;"><source src="./Songs/infer/2001004_infer.wav" type="audio/wav"/></audio></td>
-              </tr>
-              <!-- Sample 5 -->
-              <tr>
-                <td style="font-size: 1rem;">Smooth harsh cymbals while keeping presence.</td>
-                <td><audio controls style="width:150px;"><source src="./Songs/origs/2001005.wav" type="audio/wav"/></audio></td>
-                <td><audio controls style="width:150px;"><source src="./Songs/baselines/mel2mel/2001005.wav" type="audio/wav"/></audio></td>
-                <td><audio controls style="width:150px;"><source src="./Songs/baselines/text2fx_eq/2001005.wav" type="audio/wav"/></audio></td>
-                <td><audio controls style="width:150px;"><source src="./Songs/infer/2001005_infer.wav" type="audio/wav"/></audio></td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+       
 
         <!-- NEW SECTION 2: Historic Piano Recordings -->
         <section id="historic-piano" class="my-5">
