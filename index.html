@@ -182,6 +182,129 @@
           <p>1. Code repository: <a href="#">GitHub Link</a></p>
           <p>2. Model checkpoints: <a href="#">Hugging Face Link</a></p>
         </section>
+
+        <!-- NEW SECTION 1: Baseline Comparison -->
+        <section id="baseline-comparison" class="my-5">
+          <h2>Baseline Comparison</h2>
+          <table class="table table-responsive">
+            <thead>
+              <tr>
+                <th>Text Prompt</th>
+                <th>Ground Truth</th>
+                <th>Mel2Mel</th>
+                <th>Text2FX-EQ</th>
+                <th>Sonic Master</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Sample 1 -->
+              <tr>
+                <td style="font-size: 1rem;">Reduce room echo and brighten vocals slightly.</td>
+                <td><audio controls style="width:150px;"><source src="./Songs/origs/2001001.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/baselines/mel2mel/2001001.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/baselines/text2fx_eq/2001001.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/infer/2001001_infer.wav" type="audio/wav"/></audio></td>
+              </tr>
+              <!-- Sample 2 -->
+              <tr>
+                <td style="font-size: 1rem;">Increase bass warmth without muddying mids.</td>
+                <td><audio controls style="width:150px;"><source src="./Songs/origs/2001002.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/baselines/mel2mel/2001002.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/baselines/text2fx_eq/2001002.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/infer/2001002_infer.wav" type="audio/wav"/></audio></td>
+              </tr>
+              <!-- Sample 3 -->
+              <tr>
+                <td style="font-size: 1rem;">De-clip peaks and restore headroom.</td>
+                <td><audio controls style="width:150px;"><source src="./Songs/origs/2001003.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/baselines/mel2mel/2001003.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/baselines/text2fx_eq/2001003.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/infer/2001003_infer.wav" type="audio/wav"/></audio></td>
+              </tr>
+              <!-- Sample 4 -->
+              <tr>
+                <td style="font-size: 1rem;">Widen stereo image for fuller mix.</td>
+                <td><audio controls style="width:150px;"><source src="./Songs/origs/2001004.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/baselines/mel2mel/2001004.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/baselines/text2fx_eq/2001004.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/infer/2001004_infer.wav" type="audio/wav"/></audio></td>
+              </tr>
+              <!-- Sample 5 -->
+              <tr>
+                <td style="font-size: 1rem;">Smooth harsh cymbals while keeping presence.</td>
+                <td><audio controls style="width:150px;"><source src="./Songs/origs/2001005.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/baselines/mel2mel/2001005.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/baselines/text2fx_eq/2001005.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/infer/2001005_infer.wav" type="audio/wav"/></audio></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- NEW SECTION 2: Historic Piano Recordings -->
+        <section id="historic-piano" class="my-5">
+          <h2>Historic Piano Recordings</h2>
+          <table class="table table-responsive">
+            <thead>
+              <tr>
+                <th>Original</th>
+                <th>LTAS-EQ</th>
+                <th>BEHM-GAN</th>
+                <th>BABE</th>
+                <th>BABE-2</th>
+                <th>Sonic Master</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Row 1 -->
+              <tr>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/original/HP_001.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/ltas_eq/HP_001.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/behm_gan/HP_001.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/babe/HP_001.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/babe2/HP_001.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/sonic_master/HP_001.wav" type="audio/wav"/></audio></td>
+              </tr>
+              <!-- Row 2 -->
+              <tr>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/original/HP_002.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/ltas_eq/HP_002.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/behm_gan/HP_002.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/babe/HP_002.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/babe2/HP_002.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/sonic_master/HP_002.wav" type="audio/wav"/></audio></td>
+              </tr>
+              <!-- Row 3 -->
+              <tr>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/original/HP_003.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/ltas_eq/HP_003.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/behm_gan/HP_003.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/babe/HP_003.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/babe2/HP_003.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/sonic_master/HP_003.wav" type="audio/wav"/></audio></td>
+              </tr>
+              <!-- Row 4 -->
+              <tr>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/original/HP_004.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/ltas_eq/HP_004.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/behm_gan/HP_004.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/babe/HP_004.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/babe2/HP_004.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/sonic_master/HP_004.wav" type="audio/wav"/></audio></td>
+              </tr>
+              <!-- Row 5 -->
+              <tr>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/original/HP_005.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/ltas_eq/HP_005.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/behm_gan/HP_005.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/babe/HP_005.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/babe2/HP_005.wav" type="audio/wav"/></audio></td>
+                <td><audio controls style="width:150px;"><source src="./Songs/historic/sonic_master/HP_005.wav" type="audio/wav"/></audio></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
       </main>
     </div>
 
